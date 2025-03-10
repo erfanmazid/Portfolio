@@ -14,6 +14,9 @@ const config: Config = {
         "orenge-yellow": "#fceb83",
         "light-gray": "#383838",
       },
+      fontFamily: {
+        iranSans: "var(--font-iran-sans)",
+      },
     },
   },
   plugins: [],

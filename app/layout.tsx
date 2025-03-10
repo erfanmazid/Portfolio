@@ -1,8 +1,15 @@
 import type { Metadata } from "next";
-import { Vazirmatn } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
+import Navbar from "@/components/features/navbar";
+import InfoSection from "@/components/features/info";
 
-const vazirmatn = Vazirmatn({ subsets: ["latin"] });
+const iranSans = localFont({
+  src: "./fonts/IRANSans.woff2",
+  variable: "--font-iran-sans",
+  weight: "100 900",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,7 +23,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fa" dir="rtl">
-      <body className={`${vazirmatn.className} antialiased`}>{children}</body>
+      <body
+        className={`font-iranSans ${iranSans.variable} antialiased bg-smoky-black p-5`}
+      >
+        <InfoSection />
+        <Navbar />
+        <main>{children}</main>
+      </body>
     </html>
   );
 }
