@@ -30,7 +30,7 @@ export default function RootLayout({
         className={`font-iranSans ${iranSans.variable} h-screen antialiased bg-smoky-black p-5 `}
       >
         <Navbar />
-        <div className="xl:flex xl:justify-center xl:items-start xl:pt-6 xl:gap-7">
+        <div className="xl:flex xl:justify-center xl:items-start xl:p-6 xl:gap-7">
           <InfoSection />
           <main className="mb-24 xl:mb-0">{children}</main>
         </div>
