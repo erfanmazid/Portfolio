@@ -2,6 +2,7 @@ import Image from "next/image";
 import WebNavbar from "../navbar/navbarWeb";
 
 function HomeContent() {
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
   return (
     <div className="w-full flex flex-col p-5 bg-light-black rounded-3xl border-light-gray border-2 relative transition-all duration-300 mt-5 mx-auto md:max-w-[700px] lg:max-w-[900px]">
       <WebNavbar />
@@ -29,7 +30,7 @@ function HomeContent() {
           <div className="w-full flex flex-col gap-5 lg:grid lg:grid-cols-2">
             <div className="w-full flex flex-col gap-1 items-center justify-center p-5 bg-dark-black rounded-lg shadow-xl shadow-stone-950 md:flex-row md:gap-5 md:justify-start">
               <Image
-                src="/icon/coding.png"
+                src={`${basePath}/icon/coding.png`}
                 alt="coding"
                 width={40}
                 height={40}
@@ -44,7 +45,12 @@ function HomeContent() {
               </div>
             </div>
             <div className="w-full flex flex-col gap-1 items-center justify-center p-5 bg-dark-black rounded-lg shadow-xl shadow-stone-950 md:flex-row md:gap-5 md:justify-start">
-              <Image src="/icon/ui.png" alt="ui/ux" width={40} height={40} />
+              <Image
+                src={`${basePath}/icon/ui.png`}
+                alt="ui/ux"
+                width={40}
+                height={40}
+              />
               <div className="flex flex-col items-center justify-center gap-1 md:items-start">
                 <h3 className="text-white font-semibold mt-1 sm:text-xl">
                   رابط کاربری (UI) و تجربه کاربری (UX)
@@ -57,7 +63,7 @@ function HomeContent() {
             </div>
             <div className="w-full flex flex-col gap-1 items-center justify-center p-5 bg-dark-black rounded-lg shadow-xl shadow-stone-950 md:flex-row md:gap-5 md:justify-start">
               <Image
-                src="/icon/web-page.png"
+                src={`${basePath}/icon/web-page.png`}
                 alt="profile"
                 width={40}
                 height={40}
@@ -78,7 +84,7 @@ function HomeContent() {
           <ul className="flex gap-6 overflow-x-auto scrollbar-hide pb-3 px-1">
             <li className="flex items-center justify-center h-36 w-36 bg-dark-black shadow-md shadow-stone-950 flex-shrink-0 rounded-lg p-5 md:w-40 md:h-40 lg:w-44 lg:h-44">
               <Image
-                src={`/icon/html.svg`}
+                src={`${basePath}/icon/html.svg`}
                 alt="html"
                 width={120}
                 height={120}
@@ -87,7 +93,7 @@ function HomeContent() {
             </li>
             <li className="flex items-center justify-center h-36 w-36 bg-dark-black shadow-md shadow-stone-950 flex-shrink-0 rounded-lg p-5 md:w-40 md:h-40 lg:w-44 lg:h-44">
               <Image
-                src={`/icon/css.svg`}
+                src={`${basePath}/icon/css.svg`}
                 alt="css"
                 width={120}
                 height={120}
@@ -96,7 +102,7 @@ function HomeContent() {
             </li>
             <li className="flex items-center justify-center h-36 w-36 bg-dark-black shadow-md shadow-stone-950 flex-shrink-0 rounded-lg p-5 md:w-40 md:h-40 lg:w-44 lg:h-44">
               <Image
-                src={`/icon/js.svg`}
+                src={`${basePath}/icon/js.svg`}
                 alt="js"
                 width={120}
                 height={120}
@@ -105,7 +111,7 @@ function HomeContent() {
             </li>
             <li className="flex items-center justify-center h-36 w-36 bg-dark-black shadow-md shadow-stone-950 flex-shrink-0 rounded-lg p-5 md:w-40 md:h-40 lg:w-44 lg:h-44">
               <Image
-                src={`/icon/ts.svg`}
+                src={`${basePath}/icon/ts.svg`}
                 alt="ts"
                 width={120}
                 height={120}
@@ -114,7 +120,7 @@ function HomeContent() {
             </li>
             <li className="flex items-center justify-center h-36 w-36 bg-dark-black shadow-md shadow-stone-950 flex-shrink-0 rounded-lg p-5 md:w-40 md:h-40 lg:w-44 lg:h-44">
               <Image
-                src={`/icon/react.svg`}
+                src={`${basePath}/icon/react.svg`}
                 alt="react"
                 width={120}
                 height={120}
@@ -123,7 +129,7 @@ function HomeContent() {
             </li>
             <li className="flex items-center justify-center h-36 w-36 bg-dark-black shadow-md shadow-stone-950 flex-shrink-0 rounded-lg p-5 md:w-40 md:h-40 lg:w-44 lg:h-44">
               <Image
-                src={`/icon/nextjs.svg`}
+                src={`${basePath}/icon/nextjs.svg`}
                 alt="nextjs"
                 width={120}
                 height={120}
@@ -132,7 +138,7 @@ function HomeContent() {
             </li>
             <li className="flex items-center justify-center h-36 w-36 bg-dark-black shadow-md shadow-stone-950 flex-shrink-0 rounded-lg p-7 md:w-40 md:h-40 lg:w-44 lg:h-44">
               <Image
-                src={`/icon/postman.svg`}
+                src={`${basePath}/icon/postman.svg`}
                 alt="postman"
                 width={120}
                 height={120}
@@ -141,7 +147,7 @@ function HomeContent() {
             </li>
             <li className="flex items-center justify-center h-36 w-36 bg-dark-black shadow-md shadow-stone-950 flex-shrink-0 rounded-lg p-7 md:w-40 md:h-40 lg:w-44 lg:h-44">
               <Image
-                src={`/icon/figma.svg`}
+                src={`${basePath}/icon/figma.svg`}
                 alt="figma"
                 width={120}
                 height={120}

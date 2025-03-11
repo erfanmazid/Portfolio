@@ -10,12 +10,15 @@ function InfoSection() {
   function handelClick() {
     setOpen((prev) => !prev);
   }
+
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
   return (
     <aside className="w-full flex flex-col p-5 bg-light-black rounded-3xl border-light-gray border-2 relative transition-all duration-300 mx-auto md:max-w-[700px] md:mt-10 lg:max-w-[900px] xl:mt-9 xl:max-w-72 xl:mx-0 xl:self-start xl:gap-7">
       <div className="w-full flex justify-start items-center gap-4 h-20 sm:h-32 xl:justify-center xl:flex-col xl:h-full xl:gap-5">
         <div className="flex justify-center items-center bg-light-gray w-20 h-20 rounded-3xl shadow-lg shadow-white/10 sm:w-32 sm:h-32">
           <Image
-            src="/profile.png"
+            src={`${basePath}/profile.png`}
             alt="profile"
             width={45}
             height={80}
@@ -38,7 +41,7 @@ function InfoSection() {
         onClick={handelClick}
       >
         <Image
-          src="/icon/arrow.svg"
+          src={`${basePath}/icon/arrow.svg`}
           alt="arrow"
           width={11}
           height={11}
@@ -59,7 +62,7 @@ function InfoSection() {
           <li className="flex justify-start items-center gap-3">
             <div className="flex items-center justify-center w-[30px] h-[30px] bg-light-gray rounded-md shadow-md shadow-white/10 sm:w-12 sm:h-12">
               <Image
-                src={"/icon/mail.png"}
+                src={`${basePath}/icon/mail.png`}
                 alt="mail"
                 width={16}
                 height={16}
@@ -79,7 +82,7 @@ function InfoSection() {
           <li className="flex justify-start items-center gap-3">
             <div className="flex items-center justify-center w-[30px] h-[30px] bg-light-gray rounded-md shadow-md shadow-white/10 sm:w-12 sm:h-12">
               <Image
-                src={"/icon/smartphone.png"}
+                src={`${basePath}/icon/smartphone.png`}
                 alt="smartphone"
                 width={16}
                 height={16}
@@ -96,7 +99,7 @@ function InfoSection() {
           <li className="flex justify-start items-center gap-3">
             <div className="flex items-center justify-center w-[30px] h-[30px] bg-light-gray rounded-md shadow-md shadow-white/10 sm:w-12 sm:h-12">
               <Image
-                src={"/icon/location.png"}
+                src={`${basePath}/icon/location.png`}
                 alt="location"
                 width={16}
                 height={16}
@@ -115,7 +118,7 @@ function InfoSection() {
             target="_blank"
           >
             <Image
-              src={"/icon/linkedin.svg"}
+              src={`${basePath}/icon/linkedin.svg`}
               alt="linkedin"
               width={20}
               height={20}
@@ -124,7 +127,7 @@ function InfoSection() {
           </Link>
           <Link href={"https://github.com/erfanmazid"} target="_blank">
             <Image
-              src={"/icon/github.svg"}
+              src={`${basePath}/icon/github.svg`}
               alt="github"
               width={20}
               height={20}
