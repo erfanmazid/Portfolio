@@ -21,24 +21,14 @@ function HomeContent() {
         <div className="w-full flex flex-col gap-5">
           <h2 className="text-white text-lg font-bold">من چیکار میکنم</h2>
           <div className="w-full flex flex-col gap-1 items-center justify-center p-5 bg-dark-black rounded-lg shadow-xl shadow-stone-950">
-            <Image
-              src="/Portfolio/icon/coding.png"
-              alt="coding"
-              width={40}
-              height={40}
-            />
+            <Image src="/icon/coding.png" alt="coding" width={40} height={40} />
             <h3 className="text-white font-semibold mt-1">طراحی و توسعه وب</h3>
             <p className="text-gray-300 text-center text-sm">
               ساخت وبسایت‌های سریع، مدرن و کارآمد
             </p>
           </div>
           <div className="w-full flex flex-col gap-1 items-center justify-center p-5 bg-dark-black rounded-lg shadow-xl shadow-stone-950">
-            <Image
-              src="/Portfolio/icon/ui.png"
-              alt="ui/ux"
-              width={40}
-              height={40}
-            />
+            <Image src="/icon/ui.png" alt="ui/ux" width={40} height={40} />
             <h3 className="text-white font-semibold mt-1">
               رابط کاربری (UI) و تجربه کاربری (UX)
             </h3>
@@ -48,7 +38,7 @@ function HomeContent() {
           </div>
           <div className="w-full flex flex-col gap-1 items-center justify-center p-5 bg-dark-black rounded-lg shadow-xl shadow-stone-950">
             <Image
-              src="/Portfolio/icon/web-page.png"
+              src="/icon/web-page.png"
               alt="profile"
               width={40}
               height={40}
@@ -66,39 +56,24 @@ function HomeContent() {
           <ul className="flex gap-6 overflow-x-auto scrollbar-hide pb-3 px-1">
             <li className="h-36 w-36 bg-dark-black shadow-md shadow-stone-950 flex-shrink-0 rounded-lg p-5">
               <Image
-                src={`/Portfolio/icon/html.svg`}
+                src={`/icon/html.svg`}
                 alt="html"
                 width={120}
                 height={120}
               />
             </li>
             <li className="h-36 w-36 bg-dark-black shadow-md shadow-stone-950 flex-shrink-0 rounded-lg p-5 ">
-              <Image
-                src={`/Portfolio/icon/css.svg`}
-                alt="css"
-                width={120}
-                height={120}
-              />
+              <Image src={`/icon/css.svg`} alt="css" width={120} height={120} />
+            </li>
+            <li className="h-36 w-36 bg-dark-black shadow-md shadow-stone-950 flex-shrink-0 rounded-lg p-5 ">
+              <Image src={`/icon/js.svg`} alt="js" width={120} height={120} />
+            </li>
+            <li className="h-36 w-36 bg-dark-black shadow-md shadow-stone-950 flex-shrink-0 rounded-lg p-5 ">
+              <Image src={`/icon/ts.svg`} alt="ts" width={120} height={120} />
             </li>
             <li className="h-36 w-36 bg-dark-black shadow-md shadow-stone-950 flex-shrink-0 rounded-lg p-5 ">
               <Image
-                src={`/Portfolio/icon/js.svg`}
-                alt="js"
-                width={120}
-                height={120}
-              />
-            </li>
-            <li className="h-36 w-36 bg-dark-black shadow-md shadow-stone-950 flex-shrink-0 rounded-lg p-5 ">
-              <Image
-                src={`/Portfolio/icon/ts.svg`}
-                alt="ts"
-                width={120}
-                height={120}
-              />
-            </li>
-            <li className="h-36 w-36 bg-dark-black shadow-md shadow-stone-950 flex-shrink-0 rounded-lg p-5 ">
-              <Image
-                src={`/Portfolio/icon/react.svg`}
+                src={`/icon/react.svg`}
                 alt="react"
                 width={120}
                 height={120}
@@ -106,7 +81,7 @@ function HomeContent() {
             </li>
             <li className="h-36 w-36 bg-dark-black shadow-md shadow-stone-950 flex-shrink-0 rounded-lg p-5 ">
               <Image
-                src={`/Portfolio/icon/nextjs.svg`}
+                src={`/icon/nextjs.svg`}
                 alt="nextjs"
                 width={120}
                 height={120}
@@ -114,7 +89,7 @@ function HomeContent() {
             </li>
             <li className="h-36 w-36 bg-dark-black shadow-md shadow-stone-950 flex-shrink-0 rounded-lg p-7 ">
               <Image
-                src={`/Portfolio/icon/postman.svg`}
+                src={`/icon/postman.svg`}
                 alt="postman"
                 width={120}
                 height={120}
@@ -122,7 +97,7 @@ function HomeContent() {
             </li>
             <li className="h-36 w-36 bg-dark-black shadow-md shadow-stone-950 flex-shrink-0 rounded-lg p-7 ">
               <Image
-                src={`/Portfolio/icon/figma.svg`}
+                src={`/icon/figma.svg`}
                 alt="figma"
                 width={120}
                 height={120}
