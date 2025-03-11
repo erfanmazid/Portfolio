@@ -4,7 +4,7 @@ import WebNavbar from "../navbar/navbarWeb";
 function HomeContent() {
   const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
   return (
-    <div className="w-full flex flex-col p-5 bg-light-black rounded-3xl border-light-gray border-2 relative transition-all duration-300 mt-5 mx-auto md:max-w-[700px] lg:max-w-[900px]">
+    <div className="w-full flex flex-col p-5 bg-light-black rounded-3xl border-light-gray border-2 relative transition-all duration-300 mt-5 mx-auto md:max-w-[700px] lg:max-w-[900px] xl:mt-0">
       <WebNavbar />
       <div className="w-full flex flex-col gap-6">
         <div className="flex flex-col gap-5">

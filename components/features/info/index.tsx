@@ -14,7 +14,7 @@ function InfoSection() {
   const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
   return (
-    <aside className="w-full flex flex-col p-5 bg-light-black rounded-3xl border-light-gray border-2 relative transition-all duration-300 mx-auto md:max-w-[700px] md:mt-10 lg:max-w-[900px] xl:mt-9 xl:max-w-72 xl:mx-0 xl:self-start xl:gap-7">
+    <aside className="w-full flex flex-col p-5 bg-light-black rounded-3xl border-light-gray border-2 relative transition-all duration-300 mx-auto md:max-w-[700px] md:mt-10 lg:max-w-[900px] xl:max-w-72 xl:mx-0 xl:self-start xl:gap-7 xl:mt-0">
       <div className="w-full flex justify-start items-center gap-4 h-20 sm:h-32 xl:justify-center xl:flex-col xl:h-full xl:gap-5">
         <div className="flex justify-center items-center bg-light-gray w-20 h-20 rounded-3xl shadow-lg shadow-white/10 sm:w-32 sm:h-32">
           <Image
