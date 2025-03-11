@@ -3,12 +3,12 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-function Navbar() {
+function WebNavbar() {
   const pathname = usePathname();
 
   return (
-    <div className="fixed bottom-0 left-0 right-0 bg-[#2a2a2cBF]/75 h-16 border-2 border-light-gray rounded-t-3xl z-50 backdrop-blur-md shadow-lg lg:hidden">
-      <ul className="flex gap-3 justify-center items-center h-full text-sm text-gray-300">
+    <div className="absolute top-0 left-0 bg-[#2a2a2cBF]/75 h-16 border-b-2 border-r-2 px-7 border-light-gray rounded-tl-3xl rounded-br-3xl  z-50 backdrop-blur-md shadow-lg hidden lg:block">
+      <ul className="flex gap-6 justify-center items-center h-full text-balance text-gray-300">
         {[
           { href: "/", label: "درباره من" },
           { href: "/resume", label: "رزومه" },
@@ -34,4 +34,4 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+export default WebNavbar;

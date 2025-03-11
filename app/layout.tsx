@@ -24,7 +24,7 @@ export default function RootLayout({
   return (
     <html lang="fa" dir="rtl">
       <body
-        className={`font-iranSans ${iranSans.variable} antialiased bg-smoky-black p-5`}
+        className={`font-iranSans ${iranSans.variable} h-screen antialiased bg-smoky-black p-5 xl:flex xl:justify-center xl:items-center xl:gap-7`}
       >
         <InfoSection />
         <Navbar />
