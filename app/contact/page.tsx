@@ -1,5 +1,11 @@
+import ContactPageContent from "@/components/features/contact";
+
 function ContactPage() {
-  return <div>jsj</div>;
+  return (
+    <>
+      <ContactPageContent />
+    </>
+  );
 }
 
 export default ContactPage;

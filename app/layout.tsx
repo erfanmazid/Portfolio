@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Navbar from "@/components/features/navbar";
 import InfoSection from "@/components/features/info";
+import { Toaster } from "react-hot-toast";
 
 const iranSans = localFont({
   src: "./fonts/IRANSans.woff2",
@@ -29,6 +30,7 @@ export default function RootLayout({
       <body
         className={`font-iranSans ${iranSans.variable} h-screen antialiased bg-smoky-black p-5 `}
       >
+        <Toaster position="top-center" />
         <Navbar />
         <div className="xl:flex xl:justify-center xl:items-start xl:p-6 xl:gap-7">
           <InfoSection />
