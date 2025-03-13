@@ -11,10 +11,10 @@ function WebNavbar() {
       <ul className="flex gap-6 justify-center items-center h-full text-balance text-gray-300">
         {[
           { href: "/", label: "درباره من" },
-          { href: "/resume", label: "رزومه" },
-          { href: "/portfolio", label: "نمونه کار" },
-          { href: "/blog", label: "بلاگ" },
-          { href: "/contact", label: "ارتباط با من" },
+          { href: "/resume/", label: "رزومه" },
+          { href: "/portfolio/", label: "نمونه کار" },
+          { href: "/blog/", label: "بلاگ" },
+          { href: "/contact/", label: "ارتباط با من" },
         ].map(({ href, label }) => (
           <li key={href}>
             <Link
