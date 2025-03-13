@@ -37,7 +37,7 @@ function ContactPageContent() {
   async function onSubmit(values: FormValues) {
     setIsSubmitting(true);
     try {
-      const response = await fetch("/api/contact", {
+      const response = await fetch("https://formspree.io/f/mrbpgwwg", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -67,6 +67,7 @@ function ContactPageContent() {
           <h2 className="text-white text-lg font-bold sm:text-2xl">فرم تماس</h2>
           <form
             className="w-full flex flex-col gap-5"
+            action={"https://formspree.io/f/mrbpgwwg"}
             onSubmit={handleSubmit(onSubmit)}
           >
             <div className="flex flex-col w-full gap-5 md:grid md:grid-cols-2 ">
