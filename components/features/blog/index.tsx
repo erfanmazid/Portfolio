@@ -1,4 +1,4 @@
-import EmptyState from "@/components/EmptyState";
+import EmptyState from "@/components/features/emptyState";
 import PageFrame from "@/components/ui/frame";
 import React from "react";
 
