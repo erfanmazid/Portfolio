@@ -1,10 +1,12 @@
 import Image from "next/image";
 
 const EmptyState = ({ message = "محتوایی برای نمایش وجود ندارد." }) => {
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
   return (
     <div className="flex flex-col gap-3 items-center justify-center py-20 text-center">
       <Image
-        src={"/icon/spider.svg"}
+        src={`${basePath}/icon/spider.svg`}
         alt="spider"
         width={170}
         height={180}
